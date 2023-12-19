@@ -5,7 +5,7 @@ interface Props {
   gameId: number;
 }
 
-const GameScreenShots = ({ gameId }: Props) => {
+const GameScreenshots = ({ gameId }: Props) => {
   const { data, error, isLoading } = useScreenshots(gameId);
 
   if (isLoading) return null;
@@ -17,4 +17,4 @@ const GameScreenShots = ({ gameId }: Props) => {
   );
 };
 
-export default GameScreenShots;
+export default GameScreenshots;
